@@ -14,5 +14,5 @@ set -x
 
 PYTHONPATH=. ${PREFIX}pytest --ignore venv -W ignore::DeprecationWarning --cov=databases --cov=tests  ${@}
 ${PREFIX}mypy databases --ignore-missing-imports --disallow-untyped-defs
-${PREFIX}autoflake --recursive databases tests
-${PREFIX}black databases tests --check
+#${PREFIX}autoflake --recursive databases tests
+#${PREFIX}black databases tests --check
