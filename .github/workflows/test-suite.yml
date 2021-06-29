@@ -2,10 +2,8 @@
 name: Test Suite
 
 on:
-  push:
-    branches: ["master"]
-  pull_request:
-    branches: ["master"]
+  repository_dispatch:
+  workflow_dispatch:
 
 jobs:
   tests:
