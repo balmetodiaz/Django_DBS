@@ -48,4 +48,4 @@ jobs:
           TEST_DATABASE_URLS: "sqlite:///testsuite, mysql://username:password@localhost:3306/testsuite, postgresql://username:password@localhost:5432/testsuite, postgresql+aiopg://username:password@127.0.0.1:5432/testsuite"
         run: |
           ls
-          lscpu
+          python test_connection_options.py
